@@ -26,3 +26,18 @@ How many values? <strong>3</strong><br>
 <strong>23</strong><br>
 [10, 8, 23]<br>
 First: 10
+
+### <ins>Restrictions for Generics</ins>
+
+#### A consulting company wants to evaluate the performance of products, employees, and other things. One of the calculations it needs is to find the largest value among a set of elements. Write a program that reads a set of N products, as shown in the example, and then displays the most expensive one.
+
+<img src="Imagens\Restrictions for Generics - UML.png" alt="Restrictions for Generics - UML">
+
+#### Example:
+
+Enter N: 3</strong><br>
+<strong>Computer,890.50</strong><br>
+<strong>IPhone X,910.00</strong><br>
+<strong>Tablet,550.00</strong><br>
+Max:<br>
+IPhone, 910.00<br>
