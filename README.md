@@ -2,7 +2,7 @@
 
 #### This exercise is based on the <a href="https://www.udemy.com/course/programacao-orientada-a-objetos-csharp/?couponCode=MT260714G2">"C# COMPLETO Programação Orientada a Objetos + Projetos"</a> course.
 
-#### This repository covers the concepts and use of Generics, Set, Dictionary and Hash collections in C#.
+#### This repository covers the concepts and use of Generics, Set, Dictionary, HashSet and SortedSet collections in C#.
 
 ### <ins>Generics</ins>
 
@@ -41,3 +41,20 @@ Enter N: 3</strong><br>
 <strong>Tablet,550.00</strong><br>
 Max:<br>
 IPhone, 910.00<br>
+
+### <ins>HashSet and SortedSet</ins>
+
+#### Represents a collection of elements (similar to sets in algebra)
+
+- Does not allow duplicates
+- Elements have no specific order
+- Fast access, insertion, and removal of elements
+- Provides efficient set operations: intersection, union, and difference
+
+#### Differences
+
+#### HashSet
+
+ - Stores elements in a hash table
+ - Extremely fast: insertion, removal, and lookup - O(1)
+ - Element order is not guaranteed
