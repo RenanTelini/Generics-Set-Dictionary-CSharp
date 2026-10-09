@@ -58,3 +58,9 @@ IPhone, 910.00<br>
  - Stores elements in a hash table
  - Extremely fast: insertion, removal, and lookup - O(1)
  - Element order is not guaranteed
+
+#### SortedSet
+
+- Stores elements in a tree
+- Fast: insertion, removal, and lookup - O(log(n))
+- Elements are stored in sorted order, according to the implementation of `IComparer<T>`
