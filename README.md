@@ -2,7 +2,7 @@
 
 #### This exercise is based on the <a href="https://www.udemy.com/course/programacao-orientada-a-objetos-csharp/?couponCode=MT260714G2">"C# COMPLETO Programação Orientada a Objetos + Projetos"</a> course.
 
-#### This repository covers the concepts and use of Generics, Set, Dictionary, HashSet and SortedSet collections in C#.
+#### This repository covers the concepts and use of Generics, Set, Dictionary, HashSet, SortedSet, GetHashCode and Equals collections in C#.
 
 ### <ins>Generics</ins>
 
@@ -64,3 +64,45 @@ IPhone, 910.00<br>
 - Stores elements in a tree
 - Fast: insertion, removal, and lookup - O(log(n))
 - Elements are stored in sorted order, according to the implementation of `IComparer<T>`
+
+### <ins>GetHashCode and Equals<ins>
+
+#### These are methods from the `Object` class used to determine whether one object is equal to another.
+
+#### `Equals`: slower, but provides an exact comparison result.
+
+#### `GetHashCode`: faster, but matching hash codes do not guarantee that two objects are equal.
+
+#### Built-in types already provide implementations of these methods. Custom classes and structs need to override them.
+
+#### How Do Hash Collections Test Equality?
+
+#### If `GetHashCode` and `Equals` are implemented:
+
+- First, `GetHashCode` is called. If the hash codes match, `Equals` is used to confirm equality.
+
+#### If `GetHashCode` and `Equals` are NOT implemented:
+
+- Reference types: compare object references.
+- Value types: compare the values of their fields.
+
+### <ins>GetHashCode and Equals: Example Problem<ins>
+
+#### A website records a log of user visits. Each log entry consists of the username and the timestamp when the user accessed the website, in ISO 8601 format, separated by a space, as shown in the example.
+
+#### Write a program that reads the access log from a file and reports how distinct users accessed the website.
+
+#### Example:
+
+<strong>Input file:</strong><br>
+amanda 2020-08-26T20:45:08<br>
+alex86 2020-08-26T21:49:37<br>
+bobbrown 2020-08-27T03:19:13<br>
+amanda 2020-08-27T08:11:00<br>
+jeniffer3 2020-08-27T09:19:24<br>
+alex86 2020-08-27T22:39:52<br>
+amanda 2020-08-28T07:42:19
+
+<strong>Execution:</strong><br>
+Enter file full path: <strong>c:\temp\in.txt</strong><br>
+Total users: 4
