@@ -131,3 +131,31 @@ How many students for course C? <strong>3<br>
 35<br>
 13</strong><br>
 Total students: 6
+
+### <ins>Dictionary and SortedDictionary</ins>
+
+#### Dictionary<TKey, TValue>
+
+- A collection of key-value pairs.
+- Does not allow duplicate keys.
+- Elements are indexed by their keys (they do not have a position.)
+- Fast access, insertion, and removal of elements.
+- Common use cases: cookies, local storage, and any key-value data model.
+
+#### Differences
+
+#### Dictionaty
+
+- Uses a hash table for storage.
+- Extremely fast: insertion, removal, and lookup in O(1).
+- The order of elements is not guaranted.
+
+#### SortedDictionary
+
+- Uses a tree for storage.
+- Fast: insertion, removal, and lookup in O(log(n)).
+- Elements are stored in sorted order according to the implementation of `IComparer<T>`.
+
+### <ins>Dictionary: Demo - Example Problem</ins>
+
+#### Example of using Dictionaty
