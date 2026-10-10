@@ -159,3 +159,28 @@ Total students: 6
 ### <ins>Dictionary: Demo - Example Problem</ins>
 
 #### Example of using Dictionaty
+
+### <ins>Dictionary: Election Vote Counter</ins>
+
+#### During an election vote count, multiple voting records are generated, containing the candidate's name and the number of votes they received at a polling station, in .csv format.
+
+#### You must write a program to read the voting records from a file and then generate a consolidated report with the total number of votes for each candidate.
+
+#### Example:
+
+#### Input file:
+Alex Blue,15<br>
+Maria Green,22<br>
+Bob Brown,21<br>
+Alex Blue,30<br>
+Bob Brown,15<br>
+Maria Green,27<br>
+Maria Green,22<br>
+Bob Brown,25<br>
+Alex Blue,31
+
+#### Execution:
+Enter file full path: c:\temp\in2.txt<br>
+Alex Blue: 76<br>
+Maria Green: 71<br>
+Bob Brown: 61
