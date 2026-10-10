@@ -106,3 +106,28 @@ amanda 2020-08-28T07:42:19
 <strong>Execution:</strong><br>
 Enter file full path: <strong>c:\temp\in.txt</strong><br>
 Total users: 4
+
+### <ins>Course and student with HashSet</ins>
+
+#### In an online learning platform, each user has a unique identifier represented by an integer.
+
+#### Each instructor on the platform may have multiple courses, and a student can enroll in as many courses as they wish. Therefore, the total number of students an instructor has is not simply the sum of the students enrolled in all their courses, since the same student may be enrolled in more than one course.
+
+#### Instructor Alex has three courses, A, B and C, and wants to determine his total number of students.
+
+#### Your program must read the students enrolled in Alex's courses A, B and C, then display the total number of unique students, as shown in the example.
+
+#### Example:
+
+How many students for course A? <strong>3<br>
+21<br>
+35<br>
+22</strong><br>
+How many students for course B? <strong>2<br>
+21<br>
+50</strong><br>
+How many students for course C? <strong>3<br>
+42<br>
+35<br>
+13</strong><br>
+Total students: 6
